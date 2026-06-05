@@ -27,12 +27,12 @@ A typing speed test built in React that measures WPM and accuracy in real time. 
 
 ### Installation
 
-Copy `TypingTest.jsx` into your project:
+Copy `typingText.js` into your project:
 
 ```
 src/
-└── components/
-    └── TypingTest.jsx
+└── molecule/
+    └── typingText.js
 ```
 
 No extra packages required — only React's built-in hooks are used.
@@ -40,7 +40,7 @@ No extra packages required — only React's built-in hooks are used.
 ### Usage
 
 ```jsx
-import TypingTest from './components/TypingTest';
+import TypingTest from './molecule/typingText';
 
 function App() {
   return <TypingTest />;
@@ -125,7 +125,7 @@ const LEVELS = ["easy", "medium", "hard", "code", "quotes"];
 ## Project Structure
 
 ```
-TypingTest.jsx
+typingText.jsx
 │
 ├── PASSAGES         — passage bank, keyed by difficulty level
 ├── DURATION         — test length in seconds (default: 60)
@@ -134,7 +134,7 @@ TypingTest.jsx
 ├── pickPassage()    — returns a random passage for a given level
 ├── computeStats()   — counts correct/wrong chars from current typed input
 │
-└── TypingTest       — main component
+└── TypingText       — main component
     ├── State
     │   ├── level        active difficulty
     │   ├── passage      current passage string
