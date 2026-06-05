@@ -198,9 +198,7 @@ export default function TypingTest() {
 
             return (
               <span key={i} style={{ position: "relative", display: "inline" }}>
-                {isCursor && (
-                  <span className="cursor-blink" className="cursor" />
-                )}
+                {isCursor && <span className="cursor-blink cursor" />}
                 <span
                   style={{
                     color,
